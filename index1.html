@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="Formstyle.css">
+</head>
+<body>
+    <form name="contact" netlify>
+    <table align="center">
+        <th></th>
+        <tr><td>First Name: <input type="text"></td> <td>Email ID: <input type="email"></td></tr>
+        <tr><td>Last Name: <input type="text"></td> <td>Mobie Number: <input type="number" maxlength="8"></td></tr>
+        <tr><td>Gender:<select name="Country">
+            <option value="Male">Male</option>
+            <option value="Femail">Female</option></select></td>
+            <td>Date of Birth:<input type="date" name="DOB"
+                value="2021-08-22"
+                min="2000-01-01" max="2021-12-31"></td>
+    </tr>
+    <th style="padding: 10PX;"></th>
+        <tr><td>Address:</td><td><input type="text"></td></tr>
+        <tr><td>Country:</td><td><select name="Country" disabled="disabled" style="color: black; background: white;">
+            <option value="Nepal">Nepal</option>
+        </select></td></tr>
+        <tr><td>City:</td><td><input type="text"></td></tr>
+        <tr><td>Zip Code:</td><td><input type="number"></td></tr>
+        <tr><td>Hobbies: <input type="checkbox" name="hobbies" value="playing"> Playing football <br/>
+<input type="checkbox" name="hobbies" value="singing"> Singing <br/>
+<input type="checkbox" name="hobbies" value="dancing"> Dancing <br/>
+<input type="checkbox" name="hobbies" value="reading"> Reading </br>
+<Button type="submit"><a href="https://www.google.com/">send</a></Button>
+</td></tr>    
+</table></form>
+</body>
+</html>
