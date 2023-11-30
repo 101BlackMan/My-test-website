@@ -19,11 +19,11 @@
         // Function to generate and print the multiplication table
         function printMultiplicationTable(number) {
             document.write('<h2>Multiplication Table for ' + number + '</h2>');
-            document.write('<table border="1"><tr><th>Multiplier</th><th>Result</th></tr>');
+            document.write('<table border="1"><tr><th>Multiplier</th></tr>');
 
             for (var i = 1; i <= 10; i++) {
                 var result = number * i;
-                document.write('<tr><td>' + 2 + " " + i + '</td><td>' + result + '</td></tr>');
+                document.write('<tr><td>' + number + 'x' + i + '=' + result + '</td></tr>');
             }
 
             document.write('</table>');
