@@ -8,14 +8,6 @@
 <body>
 
 <script>
-    //Function to refresh the page
-    function refreshPage() {
-        location.reload();
-    }
-
-    // Attach the refreshPage function to the button click event
-    document.getElementById('refreshButton').addEventListener('click', refreshPage);
-
     // Prompt the user to enter a number
     var userInput = prompt('Enter a number for the multiplication table:');
 
@@ -48,6 +40,16 @@
             location.reload();
         }, 3000);
     }
+</script>
+
+<script>
+    // Function to refresh the page
+    function refreshPage() {
+        location.reload();
+    }
+
+    // Attach the refreshPage function to the button click event
+    document.getElementById('refreshButton').addEventListener('click', refreshPage);
 </script>
 
 </body>
