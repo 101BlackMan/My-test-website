@@ -48,8 +48,9 @@
     margin-bottom: 20px;
 }
 
-ul {
+header {
     text-align: center;
+    padding-block: 8px;
 }
 
 /* ... (previous styles) */
