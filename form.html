@@ -3,45 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cool Website</title>
     <style>
-		body {
-			padding: 25px;
-			background-color: white;
-			color: black;
-			font-size: 25px;
-		}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
 
-		.dark-mode {
-			background-color: black;
-			color: white;
-		}
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
 
-		.light-mode {
-			background-color: white;
-			color: black;
-		}
-	</style>
+        section {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 1em;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-    <script>
-        function darkMode() {
-    let element = document.body;
-    let content = document.getElementById("DarkModetext");
-    element.className = "dark-mode";
-    content.innerText = "Dark Mode is ON";
-}
-function lightMode() {
-    let element = document.body;
-    let content = document.getElementById("DarkModetext");
-    element.className = "light-mode";
-    content.innerText = "Dark Mode is OFF";
-}
-    </script>
-    
-    <title>Form</title>
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
-    Form page
-    <button onclick="darkMode()">Darkmode</button>
-	<button onclick="lightMode()">LightMode</button>
+    <header>
+        <h1>Your Cool Website</h1>
+    </header>
+
+    <section>
+        <h2>Welcome to our cool website!</h2>
+        <p>This is a simple example to get you started. Feel free to customize and add more content.</p>
+    </section>
+
+    <footer>
+        &copy; 2023 Your Cool Website. All rights reserved.
+    </footer>
 </body>
 </html>
