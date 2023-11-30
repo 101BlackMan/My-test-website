@@ -48,6 +48,10 @@
     margin-bottom: 20px;
 }
 
+header {
+    text-align: center;
+}
+
 a {
     text-align: center;
     padding-block: 8px;
