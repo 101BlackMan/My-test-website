@@ -23,7 +23,7 @@
 
             for (var i = 1; i <= 10; i++) {
                 var result = number * i;
-                document.write('<tr><td>' + number + ' x ' + i + ' = ' + result + '</td></tr>' + '<button id="refreshButton">Refresh Page</button>');
+                document.write('<tr><td>' + number + ' x ' + i + ' = ' + result + '</td></tr>');
             }
 
             document.write('</table>');
@@ -41,6 +41,8 @@
         }, 3000);
     }
 </script>
+
+<button id="refreshButton">Refresh Page</button>
 
 <script>
     // Function to refresh the page
