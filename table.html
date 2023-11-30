@@ -56,5 +56,26 @@
     document.getElementById('refreshButton').addEventListener('click', refreshPage);
 </script>
 
+<!-- Input box -->
+<input type="text" id="nameInput" placeholder="Enter your name and press Enter">
+
+<script>
+    // Function to handle the Enter key press event
+    function handleKeyPress(event) {
+        // Check if the pressed key is Enter (key code 13)
+        if (event.keyCode === 13) {
+            // Get the value from the input box
+            var name = document.getElementById('nameInput').value;
+
+            // Display a greeting
+            alert('Hello, ' + name);
+        }
+    }
+
+    // Attach the handleKeyPress function to the input box keypress event
+    document.getElementById('nameInput').addEventListener('keypress', handleKeyPress);
+</script>
+
+
 </body>
 </html>
