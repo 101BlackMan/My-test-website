@@ -3,41 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Table Printing Example</title>
+    <title>Multiplication Table Generator</title>
 </head>
 <body>
 
 <script>
-    // Sample data for the table
-    var data = [
-        { Name: 'John', Age: 25, Country: 'USA' },
-        { Name: 'Jane', Age: 30, Country: 'Canada' },
-        { Name: 'Doe', Age: 22, Country: 'UK' },
-    ];
+    // Prompt the user to enter a number
+    var userInput = prompt('Enter a number for the multiplication table:');
 
-    // Function to create and print the table
-    function printTable(data) {
-        // Start building the HTML for the table
-        var tableHTML = '<table border="1"><tr><th>Name</th><th>Age</th><th>Country</th></tr>';
+    // Convert user input to a number
+    var number = parseInt(userInput);
 
-        // Loop through the data and add rows to the table
-        for (var i = 0; i < data.length; i++) {
-            tableHTML += '<tr>';
-            tableHTML += '<td>' + data[i].Name + '</td>';
-            tableHTML += '<td>' + data[i].Age + '</td>';
-            tableHTML += '<td>' + data[i].Country + '</td>';
-            tableHTML += '</tr>';
+    // Check if the input is a valid number
+    if (!isNaN(number)) {
+        // Function to generate and print the multiplication table
+        function printMultiplicationTable(number) {
+            document.write('<h2>Multiplication Table for ' + number + '</h2>');
+            document.write('<table border="1"><tr><th>Multiplier</th><th>Result</th></tr>');
+
+            for (var i = 1; i <= 10; i++) {
+                var result = number * i;
+                document.write('<tr><td>' + i + '</td><td>' + result + '</td></tr>');
+            }
+
+            document.write('</table>');
         }
 
-        // Close the table HTML
-        tableHTML += '</table>';
-
-        // Write the HTML to the document
-        document.write(tableHTML);
+        // Call the function with the user-entered number
+        printMultiplicationTable(number);
+    } else {
+        // Alert the user if the input is not a valid number
+        alert('Invalid input. Please enter a valid number.');
     }
-
-    // Call the function with the sample data
-    printTable(data);
 </script>
 
 </body>
